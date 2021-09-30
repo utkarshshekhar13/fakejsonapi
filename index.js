@@ -3,6 +3,9 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
+const database = require("./database");
+database();
+
 express.urlencoded({ extended: false });
 express.json();
 
