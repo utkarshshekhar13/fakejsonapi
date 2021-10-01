@@ -5,24 +5,18 @@
 
 - api - quotes
 - POST      :- localhost:3000/api/createQuoteAuthor
-- payload - 
-- application/json
-- {
+- payload -  application/json {
     "quote":"This is a test quote two",
     "author":"Random two"
 }
 - GET       :- localhost:3000/api/getAllQuotesAuthors
 - PUT       :- localhost:3000/api/updateQuoteAuthorById
-- payload -
-- application/json
-- {
+- payload -application/json {
     "id": "61557a3c433c6c105116855e",
     "quote":"This is a updated test quote ......",
     "author":"Random One"
 }
 - DELETE    :- localhost:3000/api/deleteQuoteAuthorById
-- payload -
-- application/json
-- {
+- payload -application/json {
     "id": "61557a3c433c6c105116855e"
 }
