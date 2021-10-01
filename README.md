@@ -1,6 +1,10 @@
 # fakejsonapi
 - A Fake Json Api for dev testing. Especially for frontend developers who wants to get their hands dirty on Networking.
+- Install Nodejs 
 - Install MongoDb Community Edition and give the database url inside database.js.
+- Clone the project and then get into the project directory and type npm install
+- After completion start the server by npx nodemon index.js || node index.js
+- Whenever there is a server crash re run the above code in the terminal
 - User Role Based Authentication and their respective CRUD is on the way....
 
 - api - quotes
