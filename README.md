@@ -10,14 +10,14 @@
 - api - quotes
 - POST      :- localhost:3000/api/createQuoteAuthor
 - payload -  application/json {
-    "quote":"This is a test quote two",
-    "author":"Random two"
+    "quote":"This is a test quote",
+    "author":"Random"
 }
 - GET       :- localhost:3000/api/getAllQuotesAuthors
 - PUT       :- localhost:3000/api/updateQuoteAuthorById
 - payload -application/json {
     "id": "61557a3c433c6c105116855e",
-    "quote":"This is a updated test quote ......",
+    "quote":"This is a updated test quote one",
     "author":"Random One"
 }
 - DELETE    :- localhost:3000/api/deleteQuoteAuthorById
