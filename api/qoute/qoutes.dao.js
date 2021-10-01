@@ -9,15 +9,15 @@ quoteSchema.statics = {
     public.save(cb);
   },
 
-  get: function (data, cb) {
+  get: function (query, cb) {
     this.find(query, cb);
   },
 
-  update: function (query, updateData, cb) {
+  updateDataById: function (query, updateData, cb) {
     this.updateOne(query, { $set: updateData }, { new: true }, cb);
   },
 
-  delete: function (query, cb) {
+  deleteDataById: function (query, cb) {
     this.deleteOne(query, cb);
   },
 };
