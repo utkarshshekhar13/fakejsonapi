@@ -5,7 +5,7 @@
 
 - api 
     - Quote = CRUD Completed
-              POST      :- localhost:3000/api/createQuoteAuthor
-              GET       :- localhost:3000/api/getAllQuotesAuthors
-              PUT       :- localhost:3000/api/updateQuoteAuthorById
-              DELETE    :- localhost:3000/api/deleteQuoteAuthorById
+              - POST      :- localhost:3000/api/createQuoteAuthor
+              - GET       :- localhost:3000/api/getAllQuotesAuthors
+              - PUT       :- localhost:3000/api/updateQuoteAuthorById
+              - DELETE    :- localhost:3000/api/deleteQuoteAuthorById
