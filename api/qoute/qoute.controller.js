@@ -36,7 +36,7 @@ exports.updateQuoteAuthorById = function (req, res, next) {
     author: req.body.author,
   };
 
-  Quote.updateDataById({ _id: req.body.id }, quoteData, (error, data) => {
+  Quote.updateDataById({ _id: req.body._id }, quoteData, (error, data) => {
     if (error) {
       res.status(400).json({ status: 400, error: error });
     }
@@ -46,18 +46,16 @@ exports.updateQuoteAuthorById = function (req, res, next) {
         .status(200)
         .json({ status: 200, data: data, message: "Updated Successfully" });
     } else {
-      res
-        .status(404)
-        .json({
-          status: 404,
-          message: "No Record Found with the corresponding id to update",
-        });
+      res.status(404).json({
+        status: 404,
+        message: "No Record Found with the corresponding id to update",
+      });
     }
   });
 };
 
 exports.deleteQuoteAuthorById = function (req, res, next) {
-  Quote.deleteDataById({ _id: req.body.id }, (error, data) => {
+  Quote.deleteDataById({ _id: req.body._id }, (error, data) => {
     if (error) {
       res.status(400).json({ status: 400, error: error });
     }

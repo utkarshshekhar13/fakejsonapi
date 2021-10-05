@@ -6,3 +6,5 @@ module.exports = (router) => {
   router.put("/updateQuoteAuthorById", Quote.updateQuoteAuthorById);
   router.delete("/deleteQuoteAuthorById", Quote.deleteQuoteAuthorById);
 };
+
+
